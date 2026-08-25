@@ -5,4 +5,8 @@ This is a rendering program that I built on the Linux framebuffer. All it does i
 
 This was a cool project and I learnt a lot from it. Mainly used the wikipedia entry on rotation matrices, as well as  [Tsoding's video on 3d graphics](https://www.youtube.com/watch?v=qjWkNZ0SXfo)
 
+![Cube](imgsrc/img1.bmp "Cube01")
+![Cube](imgsrc/img17.bmp "Cube02")
+Screenshots taken using [fbss](https://github.com/BryceNadj/fbss)
+
 <sub>Also thanks CAB403 for the code used in `mesh.c`</sub>
