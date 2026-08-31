@@ -94,9 +94,12 @@ int main(int argc, char *argv[]) {
         memcpy(fbp, buf, fb_data.screensize);
         memset(buf, 0, fb_data.screensize);
 
-        // uncomment this if display if refresh rate is like 5hz
-        // (idk on my laptop the refresh rate is extremely poor, but
-        // spamming \n fixes it) putc('\n', stdout);
+        /*
+         * uncomment this if display refresh rate is like 5hz
+         * (idk, on my laptop the refresh rate is extremely poor, but
+         * spamming \n fixes it)
+         */
+        // putc('\n', stdout);
 
         nanosleep(&ts, NULL);
     }
