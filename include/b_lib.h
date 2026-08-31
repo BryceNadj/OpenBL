@@ -25,6 +25,9 @@ void draw_triangle(dbl_tri_t tri, uint32_t col);
 int rotate_x(mesh_t *mesh, mesh_t *out, double theta);
 int rotate_y(mesh_t *mesh, mesh_t *out, double theta);
 int rotate_z(mesh_t *mesh, mesh_t *out, double theta);
+
+void translate_x(mesh_t *mesh, mesh_t *out, double dx);
+void translate_y(mesh_t *mesh, mesh_t *out, double dy);
 void translate_z(mesh_t *mesh, mesh_t *out, double dz);
 
 void p_add(point_t a, point_t b, point_t *out);

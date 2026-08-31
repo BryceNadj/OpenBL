@@ -165,6 +165,24 @@ int draw_mesh3d(mesh_t *mesh, uint32_t col) {
     return 0;
 }
 
+void translate_x(mesh_t *mesh, mesh_t *out, double dx) {
+    for (int i = 0; i < mesh->size; i++) {
+
+        out->data[i].p[0].x = mesh->data[i].p[0].x + dx;
+        out->data[i].p[1].x = mesh->data[i].p[1].x + dx;
+        out->data[i].p[2].x = mesh->data[i].p[2].x + dx;
+    }
+}
+
+void translate_y(mesh_t *mesh, mesh_t *out, double dy) {
+    for (int i = 0; i < mesh->size; i++) {
+
+        out->data[i].p[0].y = mesh->data[i].p[0].y + dy;
+        out->data[i].p[1].y = mesh->data[i].p[1].y + dy;
+        out->data[i].p[2].y = mesh->data[i].p[2].y + dy;
+    }
+}
+
 void translate_z(mesh_t *mesh, mesh_t *out, double dz) {
     for (int i = 0; i < mesh->size; i++) {
 

@@ -3,7 +3,7 @@
 
 #include <linux/fb.h>
 
-#define INTERVAL   8333333L  // 1/120 seconds
+#define INTERVAL 8333333L // 1/120 seconds
 // #define INTERVAL 16666666L // 1/60 seconds
 // #define INTERVAL 100000000L  // 1/10 seconds
 #define ONE_SEC 1000000000L // 1s
@@ -29,5 +29,7 @@ char *fb_init(fb_data_t *fb_data);
 
 void *listen_input(void *args);
 void update();
+
+void print_shapes(void);
 
 #endif // OPENBL_H
