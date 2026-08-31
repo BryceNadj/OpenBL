@@ -48,8 +48,8 @@ const char *tests[] = {TEST_MESH_STR, TEST_POINT_STR, TEST_DBL_TRI_STR, "\0"};
 
 int main(int argc, char *argv[]) {
     int opt;
-    char test_flags, test_results, *arg;
-    test_flags = test_results = 0;
+    char test_flags, *arg;
+    test_flags = 0;
 
     if (argc == 1)
         test_flags = 0xFF;
